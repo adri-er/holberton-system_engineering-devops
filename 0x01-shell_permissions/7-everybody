@@ -1,2 +1,2 @@
-#!/bin/bas
-sudo chmod ugo+x hello
+#!/bin/bash
+sudo chmod a+x hello
