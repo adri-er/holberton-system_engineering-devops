@@ -12,6 +12,16 @@
 
 # Command Line History (newest to oldest):
 :x
+:-1,.
+:-d
+:-1,d
+:-1,1
+:-1,0
+:-,dd
+:d
+:-d dd
+:-d,dd
+:-d,d
 :q!
 :q<Return>
 :q!<Return>
@@ -20,19 +30,13 @@
 :dg
 :-1d,dd
 :-1
-:-1,1
-:-1,0
 :-1,dd
 :-dd
 :-1dd
 :d,-dd
-:-d,dd
 :dd,-d
 :-2d
-:-d
 :d,-d
-:d
-:-d,d
 
 # Search String History (newest to oldest):
 
@@ -46,39 +50,46 @@
 "0	LINE	0
 	yy
 ""1	LINE	0
-	b
+	4
 "2	LINE	0
-	c
+	4
+	5
 "3	LINE	0
-	d
+	4
+	5
 "4	LINE	0
-	h
+	5
+	6
 "5	LINE	0
-	j
+	-d,d
 "6	LINE	0
-	k
+	7
 "7	LINE	0
-	o
+	3
 "8	LINE	0
-	f
+	b
 "9	LINE	0
-	yy
+	c
 "-	CHAR	0
-	y
+	3
 
 # File marks:
-'0  1  139  ~/holbertonschool-zero_day/0x02-vi/README.md
-'1  8  0  ~/holbertonschool-zero_day/lalala
-'2  1  4  ~/holbertonschool-zero_day/101-delete_line
-'3  1  10  ~/holbertonschool-zero_day/100-move_to_line
-'4  1  0  ~/holbertonschool-zero_day/6-end_line
-'5  1  0  ~/holbertonschool-zero_day/5-beginning_line
-'6  1  9  ~/holbertonschool-zero_day/4-exiting
-'7  1  0  ~/holbertonschool-zero_day/3-undoing
-'8  1  0  ~/holbertonschool-zero_day/2-pasting
-'9  1  0  ~/holbertonschool-zero_day/1-cutting
+'0  1  12  ~/holbertonschool-zero_day/0x02-vi/101-delete_line
+'1  1  1  ~/holbertonschool-zero_day/0x02-vi/100-move_to_line
+'2  407  5  /tmp/tutormyURfD
+'3  1  139  ~/holbertonschool-zero_day/0x02-vi/README.md
+'4  8  0  ~/holbertonschool-zero_day/lalala
+'5  1  4  ~/holbertonschool-zero_day/101-delete_line
+'6  1  10  ~/holbertonschool-zero_day/100-move_to_line
+'7  1  0  ~/holbertonschool-zero_day/6-end_line
+'8  1  0  ~/holbertonschool-zero_day/5-beginning_line
+'9  1  9  ~/holbertonschool-zero_day/4-exiting
 
 # Jumplist (newest first):
+-'  1  12  ~/holbertonschool-zero_day/0x02-vi/101-delete_line
+-'  1  1  ~/holbertonschool-zero_day/0x02-vi/100-move_to_line
+-'  407  5  /tmp/tutormyURfD
+-'  1  0  /tmp/tutormyURfD
 -'  1  139  ~/holbertonschool-zero_day/0x02-vi/README.md
 -'  8  0  ~/holbertonschool-zero_day/lalala
 -'  2  0  ~/holbertonschool-zero_day/lalala
@@ -170,15 +181,49 @@
 -'  1  0  ~/holbertonschool-zero_day/0-inserting
 -'  1  0  ~/holbertonschool-zero_day/0-inserting
 -'  1  9  ~/holbertonschool-zero_day/4-exiting
--'  1  0  ~/holbertonschool-zero_day/3-undoing
--'  1  0  ~/holbertonschool-zero_day/2-pasting
--'  1  0  ~/holbertonschool-zero_day/1-cutting
--'  1  0  ~/holbertonschool-zero_day/0-inserting
--'  1  0  ~/holbertonschool-zero_day/0-inserting
--'  1  0  ~/holbertonschool-zero_day/0-inserting
--'  1  0  ~/holbertonschool-zero_day/0-inserting
+-'  407  5  /tmp/tutormyURfD
 
 # History of marks within files (newest to oldest):
+
+> ~/holbertonschool-zero_day/0x02-vi/101-delete_line
+	"	1	12
+	^	1	13
+	.	1	13
+	+	1	4
+	+	1	1
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	5
+	+	1	12
+	+	1	9
+	+	1	8
+	+	2	0
+	+	1	8
+	+	1	13
+	+	1	13
+	+	2	0
+	+	1	15
+	+	1	13
+	+	1	15
+	+	2	0
+	+	2	0
+	+	1	19
+	+	1	16
+	+	1	13
+
+> ~/holbertonschool-zero_day/0x02-vi/100-move_to_line
+	"	1	1
+	^	1	2
+	.	1	1
+	+	1	1
+
+> /tmp/tutormyURfD
+	"	407	5
+	q	407	5
 
 > ~/holbertonschool-zero_day/0x02-vi/README.md
 	"	1	139
