@@ -1,2 +1,2 @@
 #!/bin/bas
-su chmod a+x hello
+chmod ugo+x hello
