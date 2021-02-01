@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -n iacta | grep '^ *3'
+head -3 iacta | tail -1
