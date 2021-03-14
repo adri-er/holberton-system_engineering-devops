@@ -8,12 +8,11 @@
  *
  * Return: pointer tocopy_function selected
  */
-char *(*select_func(char specifier))(char *ptr_to_percent, va_list param_list)
+char *(*select_func(char specifier))(char *, va_list , char *)
 {
 	copy_func array_copy_func[] = {
-		{'s', copy_string},
-		{'d', copy_int}
-	}
+		{'s', copy_string}
+	};
 	int index = 0;
 
 	while (specifier == array_copy_func[index].esp)

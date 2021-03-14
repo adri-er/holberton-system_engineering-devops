@@ -11,13 +11,13 @@
  */
 char *copy_string(char *ptr_to_percent, va_list param_list,char *buffer)
 {
-	sbuffer = malloc(1024);
-	char *format_ptr;
+	char *sbuffer = malloc(1024);
+	char *format_ptr, *format_buffer;
 
 	if (sbuffer == NULL)
 	{
 		free (buffer);
-		exit ();
+		exit (98);
 	}
 
 	format_buffer = malloc(250);
@@ -25,7 +25,7 @@ char *copy_string(char *ptr_to_percent, va_list param_list,char *buffer)
 	{
 		free (sbuffer);
 		free (buffer);
-		exit ();
+		exit (98);
 	}
 
 	format_ptr = clean_format(ptr_to_percent, format_buffer, 's');
@@ -35,7 +35,6 @@ char *copy_string(char *ptr_to_percent, va_list param_list,char *buffer)
 		free (format_buffer);
 		return (NULL);
 	}
-
 	_strncat(sbuffer, va_arg(param_list, char *), 1024);
 
 	/* aply format */
