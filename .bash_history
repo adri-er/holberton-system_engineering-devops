@@ -1007,3 +1007,344 @@ git clone https://github.com/holbertonschool/Betty.git
 ping github.com
 ping google.com
 sudo reboot now
+ls
+cd holbertonschool-low_level_programming/
+git status
+git add -all
+git commit -m "Consideration of case were numbers and letters were mixed"
+git push origin main
+cd 0x0A-argc_argv/
+emacs 4-add.c 
+cd ..
+git add -all
+git commit -m "Consideration of case were numbers and letters were mixed"
+git push origin main
+cd 0x0A-argc_argv/
+emacs 4-add.c 
+git add 4-add.c 
+git commit -m "Erase typo beggining"
+git push origin main
+cd ..
+cd holberton-system_engineering-devops/
+ls
+cd 0x00-shell_basics/
+ls
+cat 0-current_working_directory 
+cat 1-listit 
+ls 2-bring_me_home 
+cat 2-bring_me_home 
+pwd
+cd ~
+cd holberton-system_engineering-devops/
+cd 0x00-shell_basics/
+cd $HOME
+cd holberton-system_engineering-devops/0x00-shell_basics/
+cat 3-listfiles 
+cat 4-listmorefiles 
+cat 5-listfilesdigitonly 
+cat 6-firstdirectory 
+cat 8-firstdelete 
+cat 9-firstdirdeletion 
+cat 10-back 
+cat 11-lists 
+cat 12-file_type 
+cat 13-symbolic_link 
+cat 14-copy_html 
+cat 15-lets_move 
+cat 16-clean_emacs 
+cat 17-tree 
+cat 18-commas 
+cat 5-listfilesdigitonly 
+cat 8-firstdelete 
+cat 13-symbolic_link 
+cat 14-copy_html 
+cat 15-lets_move 
+cat 16-clean_emacs 
+cat 17-tree 
+cat 18-commas 
+cd ..
+cd 0x01-
+cd 0x01-shell_permissions/
+ls
+cat 0-iam_betty 
+whoami
+cat 1-who_am_i 
+cat 2-groups 
+cat 3-new_owner 
+cat 4-empty 
+cat 5-execute 
+cat 6-multiple_permissions 
+cat 7-everybody 
+cat 10-mirror_permissions 
+cat 11-directories_permissions 
+cat 12-directory_permissions 
+cat 13-change_group 
+cat 14-change_owner_and_group 
+cat 15-symbolic_link_permissions 
+cat 16-if_only 
+cd ..
+cd 0x02-shell_redirections/
+cat 0-hello_world 
+cat 1-confused_smiley 
+cat 2-hellofile 
+cat 3-twofiles 
+cat 4-lastlines 
+cat 5-firstlines 
+cat 6-third_line 
+cat 7-file 
+cat 8-cwd_state 
+cat 9-duplicate_last_line 
+cat 10-no_more_js 
+cat 11-directories 
+cat 12-newest_files 
+cd +
+cd ..
+clear
+ls -la
+mkdir mock
+cd mock/
+emacs confused
+chmod u+x confused 
+ls
+./confused
+emacs _length.c
+emacs _lower.c
+gcc _lower.c
+ls
+./a.out
+emacs _lower.c
+gcc _lower.c
+emacs _lower.c
+gcc _lower.c
+./a.out
+emacs everyother
+emacs strcomp
+mv strcomp strcomp.c
+emacs strcomp.c 
+emacs diagline.c
+emacs fizzbuzz.c
+emacs printstring.c
+emacs printarray.c
+emacs translate
+chmod u+x translate 
+ls
+echo AAZZ | ./translate
+emacs translate
+echo AAZZ | ./translate
+cd ..
+ls
+rm -R mock/
+cd ..
+ls
+cd holbertonschool-low_level_programming/
+ls
+mkdir 0x0B-malloc_free
+cd 0x0B-malloc_free/
+emacs README.md
+ls
+cd ..
+cd 0x0A-argc_argv/
+ls
+cd ..
+cp 0x0A-argc_argv/_putchar.c 0x0B-malloc_free/
+cd 0x0B-malloc_free/
+emacs holberton.h
+ls
+emacs 0-main.c
+emacs 1-main.c
+emacs 2-main.c
+emacs 3-main.c
+emacs 4-main.c
+emacs 5-main.c
+emacs 0-create_array.c
+cp 0-create_array.c 1-strdup.c
+cp 0-create_array.c 2-str_concat.c
+cp 0-create_array.c 3-alloc_grid.c
+cp 0-create_array.c 4-free_grid.c
+cp 0-create_array.c 5-argstostr.c
+ls
+emacs 0-create_array.c 
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+emacs holberton.h 
+emacs 0-create_array.c
+man NULL
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+man malloc
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+./a 
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+./a 
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+./a 
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+./a 
+emacs 0-create_array.c
+man ascii
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+./a 
+betty 0-create_array.c
+emacs 0-create_array.c
+betty 0-create_array.c
+emacs 1-strdup.c 
+emacs 0-create_array.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-create_array.c -o a
+./a 
+emacs 0-create_array.c
+emacs 1-strdup.c 
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strdup.c -o s
+./s
+emacs 1-strdup.c 
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strdup.c -o s
+emacs 1-strdup.c 
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strdup.c -o s
+./s
+emacs 2-str_concat.c 
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-str_concat.c -o c
+emacs 2-str_concat.c 
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-str_concat.c -o c
+./c | cat -e
+betty 2-str_concat.c
+cd ..
+cd 0x0B-malloc_free/
+ls
+rm *~
+cd ..
+emacs .gitignore
+git add .
+git status
+git commit -m "New files to malloc proyect"
+git push origin main
+cd 0x0B-malloc_free/
+emacs 3-alloc_grid.c 
+gcc -Wall -pedantic -Werror -Wextra 3-main.c 3-alloc_grid.c -o g
+./g
+bett 3-alloc_grid.c 
+betty 3-alloc_grid.c 
+emacs 3-alloc_grid.c 
+betty 3-alloc_grid.c 
+emcs 4-free_grid.c 
+emacs 4-free_grid.c 
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 3-alloc_grid.c 4-free_grid.c -o f
+emacs 4-free_grid.c 
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 3-alloc_grid.c 4-free_grid.c -o f
+valgrind ./f
+apt install valgrind
+sudo apt install valgrind
+clear
+lcls
+ls
+cd holbertonschool-low_level_programming/
+cd 0x0C-more_malloc_free/
+gcc -g -Wall -Werror -Wextra -Pedantic 2-calloc.c  -o calloc
+gcc -g -Wall -Werror -Wextra -pedantic 2-calloc.c  -o calloc
+gcc -g -Wall -Werror -Wextra -pedantic 2-main.c 2-calloc.c -o calloc
+gdb calloc
+clear
+cd ..
+mkdir 0x0D-preprocessor
+cd 0x0D-preprocessor/
+touch 0-object_like_macro.h
+touch README.md
+touch holberton.h
+cd ..
+cp 0x0C-more_malloc_free/_putchar.c 0x0D-preprocessor/
+cd 0x0D-preprocessor/
+emacs README.md
+rm holberton.h 
+emacs 0-object_like_macro.h 
+emacs 0-main.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c -o a
+emacs 0-object_like_macro.h 
+gcc -Wall -pedantic -Werror -Wextra 0-main.c -o a
+./a
+betty 0-object_like_macro.h
+ls
+emacs 1-pi.h
+emacs 1-main.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c -o b
+./b
+betty 1-pi.h 
+emacs 2-main.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c -o c
+emacs 2-main.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c -o c
+emacs 2-main.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c -o c
+emacs 2-main.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c -o c
+./c
+emacs 2-main.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c -o c
+./c
+emacs 2-main.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c -o c
+./c
+emacs 2-main.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c -o c
+./c
+cp 2-main.c 02-main.c
+gcc -Wall -pedantic -Werror -Wextra 02-main.c -o cc
+./cc
+3-function_like_macro.h
+emacs 3-function_like_macro.h
+emacs 3-main.c
+gcc -Wall -pedantic -Werror -Wextra 3-main.c -o d
+emacs 3-main.c
+emacs 3-function_like_macro.h
+gcc -Wall -pedantic -Werror -Wextra 3-main.c -o d
+./d
+betty 3-function_like_macro.h
+emacs 3-function_like_macro.h
+betty 3-function_like_macro.h
+emacs 3-function_like_macro.h
+betty 3-function_like_macro.h
+emacs 3-function_like_macro.h
+betty 3-function_like_macro.h
+emacs 3-function_like_macro.h
+betty 3-function_like_macro.h
+gcc -Wall -pedantic -Werror -Wextra 3-main.c -o d
+betty 3-function_like_macro.h
+emacs 3-function_like_macro.h
+betty 3-function_like_macro.h
+gcc -Wall -pedantic -Werror -Wextra 3-main.c -o d
+emacs 3-function_like_macro.h
+gcc -Wall -pedantic -Werror -Wextra 3-main.c -o d
+./d
+betty 3-function_like_macro.h
+emacs 3-function_like_macro.h
+betty 2-main.c
+emacs 2-main.c
+betty 2-main.c
+emacs 3-function_like_macro.h
+betty 3-function_like_macro.h
+gcc -Wall -pedantic -Werror -Wextra 3-main.c -o d
+./d
+emacs 4-sum.h
+emacs 4-main.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c -o e
+./e
+ls
+rm *~
+cd ..
+emacs .gitignore
+git add .
+git commit -m "New files of 0x0D. C - Preprocessor"
+git push origin main
+ping google.com
