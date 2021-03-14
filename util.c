@@ -11,8 +11,13 @@
 char *(*select_func(char specifier))(char *, va_list , char *)
 {
 	copy_func array_copy_func[] = {
-		{'s', copy_string}
+		{'s', copy_string},
+		{'c', copy_char},
+		{'d', copy_int},
+		{'i', copy_int},
+		{'f', copy_float}
 	};
+
 	int index = 0;
 
 	while (specifier == array_copy_func[index].esp)
@@ -20,6 +25,7 @@ char *(*select_func(char specifier))(char *, va_list , char *)
 		return (array_copy_func[index].ptr_func);
 		index++;
 	}
+	return (NULL);
 }
 
 

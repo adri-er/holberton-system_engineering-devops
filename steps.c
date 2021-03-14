@@ -23,7 +23,8 @@ int steps(char *ptr_to_percent, va_list param_list, char *buffer)
 			{/*hubo una coincidencia con un caracter especial*/
 				if (ptr_to_percent[index_format] == '%')
 				{/*se debe imprimir un simbolo %*/
-					return (0);
+					_strncat(buffer, ptr_to_percent + index_format, 1);
+					return (2);
 				}
 				else
 				{/*hubo una coincidencia con un especificador de formato*/

@@ -1,6 +1,5 @@
 #include "holberton.h"
 
-
 /**
  * copy_string -
  *
@@ -19,6 +18,7 @@ char *copy_string(char *ptr_to_percent, va_list param_list,char *buffer)
 		free (buffer);
 		exit (98);
 	}
+	sbuffer[0]='\0';
 
 	format_buffer = malloc(250);
 	if (format_buffer == NULL)
@@ -27,6 +27,7 @@ char *copy_string(char *ptr_to_percent, va_list param_list,char *buffer)
 		free (buffer);
 		exit (98);
 	}
+	format_buffer[0]='\0';
 
 	format_ptr = clean_format(ptr_to_percent, format_buffer, 's');
 	if (format_ptr == NULL)
@@ -42,3 +43,14 @@ char *copy_string(char *ptr_to_percent, va_list param_list,char *buffer)
 	free (format_buffer);
 	return (sbuffer);
 }
+
+char *copy_char(char *ptr_to_percent, va_list param_list, char *buffer)
+{
+
+}
+
+char *copy_int(char *ptr_to_percent, va_list param_list, char *buffer)
+{
+
+}
+

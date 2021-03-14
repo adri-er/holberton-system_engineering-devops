@@ -11,5 +11,6 @@ int _write(char *buffer)
 {
 	int bytes_printed = write(1, buffer, _strlen(buffer));
 	free (buffer);
+	buffer = "";
 	return (bytes_printed);
 }
