@@ -1,3 +1,6 @@
+
+For more information about the topic, the blog created by the author about this project can be found [↪️here](https://2903.medium.com/what-is-the-difference-between-hard-links-and-symbolic-links-d2adb25cc288).
+
 The following scripts in this directory do the following:
 
 0-Creates an alias.
