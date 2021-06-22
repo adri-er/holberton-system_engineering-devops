@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script prints to infinity and beyond or msg if tried to kill.
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'echo "I hate the kill command" && sudo rm /var/run/holbertonscript.pid && exit' SIGTERM
+trap 'sudo rm /var/run/holbertonscript.pid && pkill -f 100-process_and_pid_file' SIGQUIT
+touch holbertonscript.pid
+pd=$(pidof holbertonscript.pid)
+$pd > holbertonscript.pid
+sudo mv holbertonscript.pid /var/run
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
