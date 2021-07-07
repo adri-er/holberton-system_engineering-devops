@@ -1,0 +1,1 @@
+In this repo info about networking and answers to theoretical questions
