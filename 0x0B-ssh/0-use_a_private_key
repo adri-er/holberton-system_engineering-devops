@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# Connect to a server with a specific key file
 ssh -i ~/.ssh/holberton ubuntu@34.138.83.104

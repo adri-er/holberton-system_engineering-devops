@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Generates a key rith holberton file name and a passphrase
+ssh-keygen -b 4096 -f holberton -N betty
