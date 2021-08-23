@@ -9,5 +9,5 @@ sed -i '/listen \[::\]:80 default_server;/a rewrite ^/redirect_me https://www.yo
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/custom_404.html
 sed -i '/listen \[::\]:80 default_server;/a error_page 404 /custom_404.html;' /etc/nginx/sites-available/default
 sed -i '/error_page 404 \/custom_404.html;/a location = /custom_404.html {root /usr/share/nginx/html; internal;}' /etc/nginx/sites-available/default
-sed "48 i add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
+sed "47i add_header X-Served-By $HOSTNAME always;" /etc/nginx/sites-available/default
 service nginx restart
