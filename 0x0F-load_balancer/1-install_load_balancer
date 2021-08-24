@@ -11,4 +11,14 @@ sed -i '/listen \[::\]:80 default_server;/a error_page 404 /custom_404.html;' /e
 sed -i '/error_page 404 \/custom_404.html;/a location = /custom_404.html {root /usr/share/nginx/html; internal;}' /etc/nginx/sites-available/default
 sed -i "48i add_header X-Served-By $HOSTNAME always;" /etc/nginx/sites-available/default
 apt-get install -y haproxy=1.6.\*
+CONFIG="
+frontend 34.139.212.31
+    bind 0:80
+    default_backend back_ld
+
+backend back_ld
+    balance roundrobin
+    server web-01 34.73.212.97:80
+    server web-02 34.138.250.102:80"
+echo "$CONFIG" >> /etc/haproxy/haproxy.cfg
 service nginx restart
