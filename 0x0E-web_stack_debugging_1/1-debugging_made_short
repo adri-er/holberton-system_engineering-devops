@@ -3,3 +3,4 @@
 sed -i 's/8080/80/' /etc/nginx/sites-enabled/default
 sed -i 's/ipv6only=on/ /' /etc/nginx/sites-enabled/default
 service nginx restart
+sudo kill -9  "$(cat /run/nginx.pid)"
