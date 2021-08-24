@@ -22,3 +22,4 @@ backend back_ld
     server web-02 34.138.250.102:80"
 echo "$CONFIG" >> /etc/haproxy/haproxy.cfg
 service nginx restart
+/etc/init.d/haproxy restart
