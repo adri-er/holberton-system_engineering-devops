@@ -12,4 +12,4 @@ backend back_ld
     server web-01 34.73.212.97:80
     server web-02 34.138.250.102:80"
 echo "$CONFIG" >> /etc/haproxy/haproxy.cfg
-systemctl restart haproxy
+/etc/init.d/haproxy start
