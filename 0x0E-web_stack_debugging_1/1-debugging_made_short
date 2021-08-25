@@ -2,5 +2,5 @@
 # Solving bug of port connection to a Nginx
 
 sed -i 's/8080/80/' /etc/nginx/sites-enabled/default
-service nginx restart
+service nginx start
 sudo kill -9  "$(cat /run/nginx.pid)"
