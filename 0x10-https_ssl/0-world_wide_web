@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # This file gives information about a domain
-if [ $# -gt 1 ]; then
+if [ "$#" -gt 1 ]; then
    echo -n "The subdomain $2 is a "
-   dig $2.$1 | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $4}'
+   dig "$2.$1" | grep -A1 'ANSWER SECTION:' | tail -n1 | cut -b 1- | awk '{printf $4}'
    echo -n " record and points to "
-   dig $2.$1 | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $5}'
+   dig "$2.$1" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $5}'
 else
-	echo -n "The subdomain www is a A record and points to "; dig www.$1 | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $5}'
-	echo -n "The subdomain lb-01 is a A record and points to "; dig lb-01.$1 | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $5}'
-	echo -n "The subdomain web-01 is a A record and points to "; dig web-01.$1 | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $5}'
-	echo -n "The subdomain web-02 is a A record and points to "; dig web-02.$1 | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $5}'
+	echo -n "The subdomain www is a A record and points to "; dig www."$1" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $5}'
+	echo -n "The subdomain lb-01 is a A record and points to "; dig lb-01."$1" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $5}'
+	echo -n "The subdomain web-01 is a A record and points to "; dig web-01."$1" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $5}'
+	echo -n "The subdomain web-02 is a A record and points to "; dig web-02."$1" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $5}'
 fi;
