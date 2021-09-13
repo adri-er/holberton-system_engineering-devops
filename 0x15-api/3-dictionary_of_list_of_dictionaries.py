@@ -4,13 +4,13 @@
 
 if __name__ == '__main__':
     import json
-    import urllib.request
+    import requests
 
     base_url = 'https://jsonplaceholder.typicode.com/'
     url_user = base_url + 'users'
     url_todo = base_url + 'todos'
-    all_user = json.load(urllib.request.urlopen(url_user))
-    all_todo = json.load(urllib.request.urlopen(url_todo))
+    all_user = requests.get(url_user).json()
+    all_todo = requests.get(url_todo).json()
 
     with open('todo_all_employees.json', 'w+') as file:
         employee_json = {}
