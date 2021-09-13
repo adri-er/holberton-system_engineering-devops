@@ -3,16 +3,15 @@
 
 
 if __name__ == '__main__':
-    import json
     import sys
-    import urllib.request
+    import requests
 
     employee_id = sys.argv[1]
     base_url = 'https://jsonplaceholder.typicode.com/'
     url_user = base_url + 'users/{}'.format(employee_id)
     url_todo = base_url + 'todos'
-    info_user = json.load(urllib.request.urlopen(url_user))
-    all_todo = json.load(urllib.request.urlopen(url_todo))
+    info_user = requests.get(url_user).json()
+    all_todo = requests.get(url_todo).json()
 
     name = info_user.get('name')
     total_todo = 0
