@@ -11,7 +11,7 @@ url_todo = base_url + 'todos'
 info_user = json.load(urllib.request.urlopen(url_user))
 all_todo = json.load(urllib.request.urlopen(url_todo))
 
-name = info_user['name']
+name = info_user.get('name')
 total_todo = 0
 done_todo = 0
 tasks_done = []
@@ -19,9 +19,9 @@ tasks_done = []
 for todo in all_todo:
     if todo.get('userId') == int(employee_id):
         total_todo += 1
-        if todo['completed'] is True:
+        if todo.get('completed') is True:
             done_todo += 1
-            tasks_done.append(todo['title'])
+            tasks_done.append(todo.get('title'))
 
 print('Employee {} is done with tasks({}/{}):'.format(
     name,
