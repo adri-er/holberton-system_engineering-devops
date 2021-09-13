@@ -3,8 +3,8 @@
 
 
 if __name__ == '__main__':
-    import sys
     import requests
+    import sys
 
     employee_id = sys.argv[1]
     base_url = 'https://jsonplaceholder.typicode.com/'
