@@ -33,5 +33,5 @@ def number_of_subscribers(subreddit):
         request = json.loads(
             requests.get(url, headers=headers).content.decode("utf-8"))
         return request["data"]["subscribers"]
-    except:
+    except(KeyError):
         return 0
