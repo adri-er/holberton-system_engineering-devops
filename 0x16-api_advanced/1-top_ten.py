@@ -15,6 +15,7 @@ def top_ten(subreddit):
         allow_redirects=False)
     if request.status_code >= 300:
         print('None')
+        return 0
     data = json.loads(request.content.decode("utf-8"))["data"]["children"]
     for title in data:
         print(title['data']['title'])
